@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
-  "version": "3.0.1",
-  "description": "Configuration and scripts for Create React App.",
+  "name": "hedgie-react-scripts",
+  "version": "0.1.0",
+  "description": "Custom configuration react-scripts for Hedgie",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/HedgieGame/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/HedgieGame/create-react-app.git"
   },
   "files": [
     "bin",
@@ -36,6 +36,7 @@
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
+    "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react-app": "^9.0.0",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",

@@ -384,6 +384,12 @@ module.exports = function(webpackEnv) {
                 // @remove-on-eject-end
                 plugins: [
                   [
+                    require.resolve('babel-plugin-styled-components'),
+                    {
+                      pure: true,
+                    },
+                  ],
+                  [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
                       loaderMap: {
