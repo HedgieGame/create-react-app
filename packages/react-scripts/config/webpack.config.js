@@ -57,6 +57,10 @@ const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
+// Custom remove unused css.
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob-all');
+
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
@@ -599,6 +603,13 @@ module.exports = function(webpackEnv) {
           filename: 'static/css/[name].[contenthash:8].css',
           chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
         }),
+
+      // Custome remove unused css
+      isEnvProduction &&
+        new PurgecssPlugin({
+          paths: [paths.appHtml, ...glob.sync(`${paths.appSrc}/*`)],
+        }),
+
       // Generate a manifest file which contains a mapping of all asset filenames
       // to their corresponding output file so that tools can pick it up without
       // having to parse `index.html`.
