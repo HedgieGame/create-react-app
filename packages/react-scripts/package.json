@@ -1,6 +1,6 @@
 {
   "name": "hedgie-react-scripts",
-  "version": "0.1.0",
+  "version": "0.4.6",
   "description": "Custom configuration react-scripts for Hedgie",
   "repository": {
     "type": "git",
@@ -37,8 +37,11 @@
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-transform-imports":"^1.5.1",
     "babel-preset-react-app": "^9.0.0",
+    "babel-plugin-lodash":"^3.3.4",
     "camelcase": "^5.2.0",
+    "clean-webpack-plugin":"^3.0.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
@@ -70,7 +73,7 @@
     "postcss-safe-parser": "4.0.1",
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
-    "react-hot-loader":"^4.11.1",
+    "react-hot-loader": "^4.11.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
