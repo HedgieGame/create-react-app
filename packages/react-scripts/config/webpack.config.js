@@ -401,26 +401,6 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
-                  [
-                    require.resolve('babel-plugin-transform-imports'),
-                    {
-                      '@fortawesome/fontawesome-free-brands': {
-                        transform:
-                          '@fortawesome/fontawesome-free-brands/${member}',
-                        skipDefaultConversion: true,
-                      },
-                      '@fortawesome/free-solid-svg-icons': {
-                        transform:
-                          '@fortawesome/free-solid-svg-icons/${member}',
-                        skipDefaultConversion: true,
-                      },
-                      '@fortawesome/fontawesome-svg-core': {
-                        transform:
-                          '@fortawesome/fontawesome-svg-core/${member}',
-                        skipDefaultConversion: true,
-                      },
-                    },
-                  ],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
